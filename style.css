@@ -1,0 +1,146 @@
+body {
+    font-family: Montserrat, Arial, sans-serif;
+    background-color: rgb(187,222,243);
+    color: rgb(36,45,54);
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-Regular.ttf") format("truetype");
+  }
+  
+  .menu {
+      background: url("../img/menu.svg") no-repeat;
+      z-index: 10;
+  }
+  
+  .menu:hover {
+      background: url("../img/menu-hov.svg") no-repeat;
+      cursor: pointer;
+  }
+  
+  .content {
+    height: 100%;
+    min-height: 500px;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    background-color: rgb(36,45,54);
+    z-index: 11;
+  }
+  
+  nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-left: 10px solid;
+    border-color: rgb(36,45,54);
+  }
+  
+  nav a:hover {
+    display: block;
+    background-color: rgb(154,154,154);
+    text-decoration: none;
+    color: rgb(36,45,54);
+    border-left: 10px solid;
+    border-color: rgb(255,255,255);
+  }
+  
+  p#close{
+    color: rgb(255,255,255);
+    font-size: 40px;
+    width: 25px;
+    float: right;
+    margin: 12px;
+  }
+  
+  p#close:hover{
+    color: rgb(154,154,154);
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 540px) {
+    .content {
+      margin: 0px;
+      top: 100px;
+    }
+    .menu {
+        width: 45px;
+        height: 45px;
+        background-size: 45px 45px;
+        position:absolute;
+    }
+    .menu:hover {
+        background-size: 45px 45px;
+    }
+    .content {
+      width: auto;
+    }
+    img.hp {
+      width: 100px;
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    img.avatar {
+      width: 50px;
+    }
+  }
+  
+   @media screen and (min-width:541px) and (max-width:800px) {
+     .column {
+       width: 40%;
+       display: inline-block;
+     }
+     .content {
+       margin-left: 0px;
+     }
+     .menu {
+         width: 45px;
+         height: 45px;
+         background-size: 45px 45px;
+         position:absolute;
+     }
+     .menu:hover {
+         background-size: 45px 45px;
+     }
+     .content {
+       width: auto;
+     }
+     img.hp {
+       display: inline;
+       float: right;
+       width: 100px;
+       padding-bottom: 50%;
+       padding-left: 15px;
+     }
+  }
+  
+   @media screen and (min-width: 801px){
+     .column {
+       float: left;
+       width: 20%;
+       padding: 30px;
+     }
+     .content {
+       margin-left: 110px;
+     }
+     .menu {
+         width: 60px;
+         height: 60px;
+         margin-left: 15px;
+         position:fixed;
+     }
+     img.hp {
+       display: inline;
+       float: right;
+       width: 170px;
+       padding-bottom: 200px;
+     }
+  }
