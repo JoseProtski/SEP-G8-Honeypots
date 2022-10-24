@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(187,222,243);
+    color: rgb(36,45,54);
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    src: url("media/Montserrat-Regular.ttf") format("truetype");
+  }
+  
+  h1, h2, h3, thead {
+    font-family: Montserrat, "Trebuchet MS", sans-serif;
+  }
+  
+  .heading {
+    padding:20px;
+  }
+  
+  .content {
+    height: 100%;
+    min-height: 500px;
+    background-color: #fff;
+    margin: 3%;
+    padding: 20px;
+    width: 90%;
+    margin-top: 20px;
+  }
+  
+  img.avatar {
+    top: 20px;
+    display: inline;
+    position: absolute;
+  }
+  
+  table {
+      border-collapse: collapse;
+      font-size: 0.9em;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      width: 100%;
+  }
+  
+  thead tr {
+      background-color: rgb(81, 166, 223);
+      color: #fff;
+  }
+  
+  td.wrap {
+    word-break: break-word;
+  }
+  th, td {
+      padding: 10px 12px;
+  }
+  
+  tbody tr {
+      border-bottom: 1px solid #dddddd;
+  }
+  
+  tbody tr:nth-of-type(even) {
+      background-color: #f3f3f3;
+  }
+  
+  tbody tr:last-of-type {
+      border-bottom: 2px solid rgb(81, 166, 223);
+  }
+  
+  tbody tr:hover {
+      background-color: rgb(202, 202, 202);
+  }
+  
+  @media screen and (max-width: 540px) {
+    img.avatar {
+      width: 50px;
+    }
+  }
+  
+  input[type=reset] {
+          float: center;
+          padding: 12px 20px 12px;
+          width: 15%;
+          align-self: center;
+          border: 1px solid;
+          border-color: black;
+          background-color: rgb(81, 166, 223);
+  }
+  
+  input[type=submit]{
+          padding: 12px 20px 12px;
+          width: 15%;
+          align-self: center;
+          border: 1px solid;
+          border-color: black;
+          background-color: rgb(81, 166, 223);
+          margin-left: 25px;
+  }
+  
+  input[type=text] {
+          width: 25%;
+          padding: 12px 20px;
+          margin: 8px 0px;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+          align-self: center;
+  }
+  
+  input[type=date] {
+          width: 15%;
+          padding: 12px 20px;
+          margin: 8px 0px;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+          align-self: center;
+  
+  }
+  
+  input[type=radio] {
+          width: 10%;
+          padding: 12px 20px;
+          margin: 8px 0px;
+          align-self: center;
+  }
